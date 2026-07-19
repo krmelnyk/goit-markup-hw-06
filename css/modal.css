@@ -43,7 +43,10 @@ body.modal-open {
 }
 
 @media (min-width: 768px) {
-  .modal { padding-right: 24px; padding-left: 24px; }
+  .modal {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }
 
 .backdrop.is-open .modal {
@@ -244,5 +247,8 @@ body.modal-open {
 }
 
 @media (max-height: 620px) {
-  .modal { max-height: calc(100vh - 16px); overflow-y: auto; }
+  .modal {
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+  }
 }

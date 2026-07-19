@@ -69,12 +69,22 @@ img {
 }
 
 @media (min-width: 768px) {
-  .container { max-width: 768px; }
+  .container {
+    max-width: 768px;
+  }
 }
 
 @media (min-width: 1158px) {
-  .container { max-width: 1158px; padding-left: 15px; padding-right: 15px; }
-  .section { padding-top: 120px; padding-bottom: 120px; }
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .section-title {
