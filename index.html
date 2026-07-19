@@ -50,8 +50,34 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-open>
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
+
+    <div class="mobile-menu" data-menu>
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close" type="button" aria-label="Close menu" data-menu-close>
+          <svg width="8" height="8" fill="#2e2f42"><use href="./images/icons.svg#icon-close"></use></svg>
+        </button>
+        <nav>
+          <ul class="mobile-navigation-list">
+            <li><a class="mobile-navigation-link current" href="#features">Features</a></li>
+            <li><a class="mobile-navigation-link" href="#team">Team</a></li>
+            <li><a class="mobile-navigation-link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-bottom">
+          <address class="mobile-contacts">
+            <ul class="mobile-contact-list">
+              <li><a class="mobile-contact-link phone" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+              <li><a class="mobile-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </div>
 
     <main>
       <section class="hero-section" id="hero">
@@ -124,7 +150,7 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img src="./images/team-1.jpg" alt="Mark Guerrero" width="264" />
+              <img src="./images/team-1.jpg" srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x" alt="Mark Guerrero" width="264" />
               <div class="team-card-content">
                 <h3 class="team-member-name">Mark Guerrero</h3>
                 <p class="team-member-position">Product Designer</p>
@@ -161,7 +187,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-2.jpg" alt="Tom Ford" width="264" />
+              <img src="./images/team-2.jpg" srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x" alt="Tom Ford" width="264" />
               <div class="team-card-content">
                 <h3 class="team-member-name">Tom Ford</h3>
                 <p class="team-member-position">Frontend Developer</p>
@@ -198,7 +224,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-3.jpg" alt="Camila Garcia" width="264" />
+              <img src="./images/team-3.jpg" srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x" alt="Camila Garcia" width="264" />
               <div class="team-card-content">
                 <h3 class="team-member-name">Camila Garcia</h3>
                 <p class="team-member-position">Marketing</p>
@@ -235,7 +261,7 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="./images/team-4.jpg" alt="Daniel Wilson" width="264" />
+              <img src="./images/team-4.jpg" srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x" alt="Daniel Wilson" width="264" />
               <div class="team-card-content">
                 <h3 class="team-member-name">Daniel Wilson</h3>
                 <p class="team-member-position">UI Designer</p>
@@ -283,6 +309,7 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio-1.jpg"
+                  srcset="./images/portfolio-1.jpg 1x, ./images/portfolio-1@2x.jpg 2x"
                   alt="Banking application interface"
                   width="360"
                 />
@@ -301,6 +328,7 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio-2.jpg"
+                  srcset="./images/portfolio-2.jpg 1x, ./images/portfolio-2@2x.jpg 2x"
                   alt="Cashless payment using a smartphone"
                   width="360"
                 />
@@ -319,6 +347,7 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio-3.jpg"
+                  srcset="./images/portfolio-3.jpg 1x, ./images/portfolio-3@2x.jpg 2x"
                   alt="Meditation application interface"
                   width="360"
                 />
@@ -337,6 +366,7 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio-4.jpg"
+                  srcset="./images/portfolio-4.jpg 1x, ./images/portfolio-4@2x.jpg 2x"
                   alt="Taxi service inside a car"
                   width="360"
                 />
@@ -355,6 +385,7 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio-5.jpg"
+                  srcset="./images/portfolio-5.jpg 1x, ./images/portfolio-5@2x.jpg 2x"
                   alt="Screen illustrations on a smartphone"
                   width="360"
                 />
@@ -373,6 +404,7 @@
               <div class="portfolio-image-wrap">
                 <img
                   src="./images/portfolio-6.jpg"
+                  srcset="./images/portfolio-6.jpg 1x, ./images/portfolio-6@2x.jpg 2x"
                   alt="Online course website"
                   width="360"
                 />

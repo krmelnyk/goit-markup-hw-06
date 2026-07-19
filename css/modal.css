@@ -28,9 +28,10 @@ body.modal-open {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  width: calc(100% - 32px);
+  max-width: 408px;
   min-height: 584px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow:
@@ -39,6 +40,10 @@ body.modal-open {
     0 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(0.95);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .modal { padding-right: 24px; padding-left: 24px; }
 }
 
 .backdrop.is-open .modal {
@@ -236,4 +241,8 @@ body.modal-open {
 .modal-submit-button:hover,
 .modal-submit-button:focus {
   background-color: #404bbf;
+}
+
+@media (max-height: 620px) {
+  .modal { max-height: calc(100vh - 16px); overflow-y: auto; }
 }
