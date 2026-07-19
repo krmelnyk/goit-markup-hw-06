@@ -1,17 +1,13 @@
 .menu-open-button {
   display: flex;
-  flex-direction: column;
-  gap: 4px;
   padding: 0;
   border: 0;
   background-color: transparent;
   cursor: pointer;
 }
 
-.menu-open-button span {
-  width: 24px;
-  height: 2px;
-  background-color: #2e2f42;
+.menu-open-button svg {
+  display: block;
 }
 
 .mobile-menu {
@@ -131,7 +127,10 @@
 }
 
 @media (min-width: 768px) {
-  .menu-open-button,
+  .menu-open-button {
+    display: none;
+  }
+
   .mobile-menu {
     display: none;
   }
