@@ -25,7 +25,6 @@
 
 @media (min-width: 1158px) {
   .team-list { flex-wrap: nowrap; gap: 24px; }
-  .team-card { width: calc((100% - 72px) / 4); }
 }
 
 .team-card-content {
