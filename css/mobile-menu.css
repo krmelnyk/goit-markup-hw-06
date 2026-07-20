@@ -100,8 +100,8 @@
 
 .mobile-contact-link.phone {
   color: #4d5ae5;
-  font-size: clamp(24px, 8vw, 36px);
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .mobile-social-list {
