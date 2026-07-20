@@ -12,6 +12,18 @@
   justify-content: space-between;
 }
 
+.menu-open-button {
+  display: flex;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-open-button svg {
+  display: block;
+}
+
 .page-navigation {
   display: none;
   align-items: center;
@@ -76,8 +88,8 @@
 
 .contact-link {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: #434455;
   font-size: 12px;
   line-height: 1.17;
@@ -107,6 +119,10 @@
   .contact-information {
     display: flex;
   }
+
+  .menu-open-button {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1157px) {
@@ -127,6 +143,8 @@
   }
 
   .contact-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
